@@ -1,6 +1,13 @@
 const debug = require('debug')('yourstory:server');
+const dotenv = require('dotenv');
 
+dotenv.config({ path: './config/config.env' });
+
+const connectDB = require('./db');
 const app = require('../app');
+
+// Connects to the database
+connectDB();
 
 // Normalize a port into a number (Socket), string (Pipe), or false.
 const normalizePort = (val) => {

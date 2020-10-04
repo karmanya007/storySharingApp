@@ -1,18 +1,44 @@
 {
 	"name": "yourstory",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Share your story with everyone",
 	"main": "./bin/server.js",
 	"scripts": {
 		"start": "node ./bin/server.js",
 		"dev": "nodemon ./bin/server.js"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/karmanya007/storySharingApp.git"
+	},
+	"keywords": [
+		"node",
+		"express",
+		"ejs",
+		"mongoDB",
+		"mongoose"
+	],
+	"author": "Karmanya Veer Sharma",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/karmanya007/storySharingApp/issues"
+	},
+	"homepage": "https://github.com/karmanya007/storySharingApp#readme",
 	"dependencies": {
+		"connect-mongo": "^3.2.0",
 		"cookie-parser": "^1.4.4",
 		"debug": "^2.6.9",
+		"dotenv": "^8.2.0",
 		"express": "^4.16.1",
-		"hbs": "^4.1.1",
+		"express-handlebars": "^5.1.0",
+		"express-session": "^1.17.1",
 		"http-errors": "^1.6.3",
-		"morgan": "^1.9.1"
+		"mongoose": "^5.10.7",
+		"morgan": "^1.9.1",
+		"passport": "^0.4.1",
+		"passport-google-oauth20": "^2.0.0"
+	},
+	"engines": {
+		"node": "12.x"
 	}
 }

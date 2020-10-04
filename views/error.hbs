@@ -1,3 +1,10 @@
-<h1>{{message}}</h1>
-<h2>{{error.status}}</h2>
-<pre>{{error.stack}}</pre>
+<a href="/">YOUR STORY<span id="logo" aria-label="Your Story"></span></a>
+<p><b>{{error.status}}.</b> <ins>That’s an error.</ins>
+</p>
+<p>{{message}}.
+    {{#if error}}
+    <ins>{{error.stack}}</ins>
+    {{else}}
+    <ins>That’s all we know.</ins>
+    {{/if}}
+</p>
