@@ -330,3 +330,69 @@ header .fa-caret-down {
 	.social-item.bg-twitter {
 	background-color: #00acee;
 }
+
+/* LOGIN */
+
+.container-login {
+	background-image: linear-gradient(
+			to bottom,
+			rgba(132, 220, 198, 0.9),
+			rgba(240, 247, 35, 0.9)
+		),
+		url('/images/login_bg.jpg');
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.container-login .welcome-content {
+	padding: 3em;
+	max-width: 600px;
+	max-height: 500px;
+	color: #fff;
+}
+.container-login .welcome-content h1 {
+	font-weight: 400;
+	font-size: 3em;
+}
+.container-login .welcome-content p {
+	margin-top: 2em;
+	font-size: 0.95em;
+	line-height: 1.5em;
+}
+.container-login .login-box {
+	background-color: #fafafa;
+	border-radius: 0.3em;
+	box-shadow: 1px 1px 9px -5px rgba(0, 0, 0, 0.75);
+}
+.container-login .login-box .login-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 400px;
+	height: 600px;
+}
+.container-login .login-box .login-form .title {
+	padding: 1.5em;
+	font-size: 0.95em;
+	font-weight: 500;
+}
+.container-login .login-box .login-form .line {
+	width: 100%;
+	border-bottom: 1px solid rgb(146, 146, 146);
+}
+.container-login .login-box .login-form .google-login {
+	margin-top: 2em;
+	background-color: #db4437;
+	text-decoration: none;
+	color: #fff;
+	padding: 0.8em;
+	border-radius: 0.3em;
+	font-size: 0.9em;
+}
+.container-login .login-box .login-form .fa-google {
+	margin-right: 1em;
+}
